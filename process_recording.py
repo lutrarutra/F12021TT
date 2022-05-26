@@ -129,4 +129,5 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("input", type=str, help="Path to video recording")
     parser.add_argument("output", type=str, help="Output path")
-    process_video(parser.input, parser.output)
+    args = parser.parse_args()
+    process_video(args.input, args.output)
