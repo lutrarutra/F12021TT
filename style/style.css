@@ -1,0 +1,38 @@
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+ul li {
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.figure img{
+    width: 100%;
+}
+
+
+#bannerimage {
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    height: 400px;
+    background-position: center;
+}
+
+#bannerimage h1 {
+    color: white;
+    padding-top: 200px;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9;
+    width: 100%;
+    min-height: 4em;
+    background-color: white;
+}

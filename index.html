@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center" id="navbar">
+        <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Global Analysis</a></li>
+        <li class="nav-item dropdown">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle nav-link" type="button" id="dropdown" data-bs-toggle="dropdown" style="font-size: 18px;" aria-expanded="false">
+                    Circuit Analysis
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdown">
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Abu Dhabi</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Australia</a></li>
+                    <li><a class="dropdown-item nav-link" href="tracks/austria.html">Austria</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Azerbaijan</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Bahrain</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Belgium</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Brazil</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Britain</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Canada</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">China</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Hungary</a></li>
+                    <li><a class="dropdown-item nav-link" href="tracks/imola.html">Imola</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Mexico</a></li>
+                    <li><a class="dropdown-item nav-link" href="tracks/monaco.html">Monaco</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Monza</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Netherlands</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Saudi Arabia</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Singapore</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Sochi</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">Spain</a></li>
+                    <li><a class="dropdown-item nav-link disabled" href="tracks/.html">USA</a></li>
+                </ul>
+            </div>
+        </li>
+        </ul>
+    </div>
+
+    <div id="bannerimage">
+        <h1 class="text-center">F1 2021 Time Trial Analysis</h1>
+    </div>
+    <div class="container">
+        <div class="content pt-5">
+            <h2>What?</h2>
+            <p>
+                Welcome to my data mining project.
+                On this website I present my findings from analysing 50k lap times on every circuit in the F1 2021 Game.
+                Lap times are from players on PC platform in dry weather conditions. The motivation of this project is my curiosity as well as a hope to 
+                gain insights from the data gathered. This project can server as point of reference when for example discussing the impact of assists or comparing your times to the quickest drivers in the world.
+            </p>
+            <h2>How?</h2>
+            <p>
+                As you may know, the leaderboards are only available through in game scrollable menu. This provides very 
+                limited access to the data. In order to adress this issue, I implemented made a rather simple data mining pipeline. In short, the pipeline constists of following steps:
+            </p>
+            <ul>
+                <li>
+                    1. Screen record scrolling through 50k lap times on F1 2021 game.
+                </li>
+                <li>
+                    2. Document the lap times by processing the recording frame by frame with Tessarect, an optical character recognition (OCR) tool.
+                </li>
+                <li>
+                    3. Filter and analyse the documented lap times.
+                </li>
+            </ul>
+        
+            <p>
+                It is important to note that the data mining pipeline is not perfect by any means;in some
+                cases Tessarect was not successful in recognising the text which results in missing
+                some of the lap times.  
+            </p>
+
+            <p>
+                Source code is available in the Github 
+                <a href="https://github.com/lutrarutra/F12021TT" target="_blank" style="text-decoration: none;">repository</a>
+                of this project.</p>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+  </body>
+</html>
