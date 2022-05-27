@@ -59,15 +59,10 @@ def process_team_color(clr_avg):
     return closest_key
 
 def crop_colors(frame):
-    # team = frame[10:20,964:967,:]
-    # tc = frame[:,1607:1632,:]
-    # gear = frame[:,1640:1665,:]
-    # brakes = frame[:,1672:1699,:]
-
-    team = frame[10:20,972:975,:]
-    tc = frame[:,1617:1642,:]
-    gear = frame[:,1650:1675,:]
-    brakes = frame[:,1683:1708,:]
+    team = frame[10:20,964:967,:]
+    tc = frame[:,1607:1632,:]
+    gear = frame[:,1640:1665,:]
+    brakes = frame[:,1672:1699,:]
 
     return (team, tc, gear, brakes)
 
