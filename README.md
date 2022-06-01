@@ -2,7 +2,7 @@
 
 Data mining project to analyse time trials data from F1 2021 Game.
 
-[F1 2021 Time Trial Analysis](https://lutrarutra.github.io/F12021TT/)
+Results: [F1 2021 Time Trial Analysis](https://lutrarutra.github.io/F12021TT/)
 
 ## Repository Contents
 
