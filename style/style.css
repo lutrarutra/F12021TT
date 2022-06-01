@@ -29,10 +29,45 @@ ul li {
 #navbar {
     position: fixed;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     z-index: 9;
     width: 100%;
-    min-height: 4em;
     background-color: white;
 }
+
+#navimg {
+    text-align: center;
+    height: 64px;
+    /* padding-left: 32px; */
+    width: 10%;
+
+}
+
+#navimg img {
+    border-radius: 50%;
+    width: 48px;
+    margin-top: 8px;
+}
+
+#navlinks {
+    height: 64px;
+    width: 80%;
+}
+
+@media only screen and (max-width: 720px) {
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #navimg {
+        width: 100%;
+    }
+    
+    
+    #navlinks {
+        height: 64px;
+        width: 100%;
+    }
+  }

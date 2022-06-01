@@ -60,6 +60,7 @@ def read_and_filter_csv(filepath):
     return df
 
 def plot_time_dist(df, figures_path=None):
+    plt.show() # fix weird bug where matplotlib/seaborn does not use settings for first plot
     rcParams['figure.figsize'] = 11.7,8.27
     sns.set_theme(style="darkgrid")
     sns.set(font_scale=1.2)
@@ -74,6 +75,7 @@ def plot_time_dist(df, figures_path=None):
     return plt.show()
 
 def plot_cum_time_dist(df, figures_path=None):
+    plt.show()
     rcParams['figure.figsize'] = 11.7,8.27
     sns.set_theme(style="darkgrid")
     sns.set(font_scale=1.2)
@@ -84,11 +86,11 @@ def plot_cum_time_dist(df, figures_path=None):
 
     if figures_path != None:
         plt.savefig(os.path.join(figures_path, "time_cumulative_dist.png"), bbox_inches="tight")
+
     return plt.show()
 
 def plot_team_dist(df, figures_path=None, window_width=5000):
     team_proportions = pd.get_dummies(df.team).rolling(window_width, center=True).sum() / window_width * 100.0
-
 
     rcParams['figure.figsize'] = 11.7,8.27
     sns.set_theme(style="darkgrid")
