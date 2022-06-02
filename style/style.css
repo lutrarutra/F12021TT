@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 p {
     text-align: justify;
     font-size: 18px;
@@ -14,14 +20,43 @@ ul li {
 }
 
 
-#bannerimage {
-    width: 100%;
-    background-image: url(../images/banner.jpg);
+#bannerimage1 {
+    background-image: url(../images/banner1.jpg);
     height: 400px;
-    background-position: center;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;    
 }
 
-#bannerimage h1 {
+#bannerimage2 {
+    /* width: 100%; */
+    background-image: url(../images/banner2.webp);
+    height: 400px;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;    
+}
+
+#bannerimage2 h1 {
+    color: white;
+    padding-top: 200px;
+}
+
+#bannerimage2 span {
+    position: absolute;
+    color: white;
+    top: 350px;
+    right: 20px;
+}
+
+#bannerimage1 span {
+    position: absolute;
+    color: white;
+    top: 350px;
+    right: 20px;
+}
+
+#bannerimage1 h1 {
     color: white;
     padding-top: 200px;
 }
